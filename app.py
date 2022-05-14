@@ -4,7 +4,7 @@ from flask import request
 
 app=Flask(__name__)
 
-@app.route("/",methods={"GET","POST"])
+@app.route("/",methods=["GET","POST"])
 def siginup():
     if request.method=="POST":
         user=request.form.get("username")
