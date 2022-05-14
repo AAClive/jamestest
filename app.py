@@ -2,7 +2,7 @@ from flask import Flask
 from flask import SQLACHEMLY
 from flask import request
 
-app=Flask(__app__)
+app=Flask(__name__)
 
 @app.route("/",methods={"GET","POST"])
 def siginup():
