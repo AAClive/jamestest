@@ -8,6 +8,7 @@ app=Flask(__app__)
 def siginup():
     if request.method=="POST":
         user=request.form.get("username")
+    return render_template("signup")
         
 
 if __name__=="__main__":
